@@ -1,14 +1,17 @@
 
 import './ElementoElencoSpese.css';
 
-export default function ElementoElencoSpese(){
+export default function ElementoElencoSpese(props){
+    const data = props.data; // "1 Marzo 2024"
+    const titolo = props.titolo; // "Assicurazione Auto"
+    const ammontare = props.ammontare; // 294.67
     return  <div className="elemento-elenco">
-        <div>28 Marzo 2021</div>
+        <div>{data}</div>
         <div className="element-elenco-descrizione">
-            <h2>Assicurazione</h2>
+            <h2>{titolo}</h2>
         </div>
         <div className="elemento-elenco-prezzo">
-            294.67
+            {ammontare}
         </div>
     </div>
 }

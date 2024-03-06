@@ -6,7 +6,12 @@ function App() {
   return (
     <>
       <h1>Elenco spese:</h1>
-      <ElementoElencoSpese/>
+      <ElementoElencoSpese
+        data = {"1 Marzo 2023"}
+        ammontare={294.67}
+        titolo={"Assicurazione Auto"}
+      >
+      </ElementoElencoSpese>
     </>
   );
 }
