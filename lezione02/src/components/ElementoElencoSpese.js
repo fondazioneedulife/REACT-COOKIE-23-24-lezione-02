@@ -1,12 +1,13 @@
 
 import './ElementoElencoSpese.css';
-
+import { useState } from 'react';
 export default function ElementoElencoSpese(props){
-    const data = props.data; // "1 Marzo 2024"
-    const titolo = props.titolo; // "Assicurazione Auto"
-    const ammontare = props.ammontare; // 294.67
+
+    const [titolo, setTitolo] = useState(props.titolo);
+    const data = props.data; 
+    const ammontare = props.ammontare;
     const clickHandler = () =>{
-        alert("Ciao!")
+        setTitolo("Nuovo titolo!");
     }
     return  <div className="elemento-elenco">
         <div>{data}</div>
