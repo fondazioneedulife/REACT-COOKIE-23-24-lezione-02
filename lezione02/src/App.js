@@ -8,12 +8,12 @@ function App() {
     {
       titolo :"Assicurazione auto",
       ammontare : 294.13,
-      data: new Date(2023,2,29)
+      data: "2023 2 29 "
     },
     {
       titolo :"TV nuova",
       ammontare : 300,
-      data: new Date(2023,3,1)
+      data: "2023 3 1 "
     }
   ]
 
