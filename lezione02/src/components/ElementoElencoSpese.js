@@ -5,6 +5,9 @@ export default function ElementoElencoSpese(props){
     const data = props.data; // "1 Marzo 2024"
     const titolo = props.titolo; // "Assicurazione Auto"
     const ammontare = props.ammontare; // 294.67
+    const clickHandler = () =>{
+        alert("Ciao!")
+    }
     return  <div className="elemento-elenco">
         <div>{data}</div>
         <div className="element-elenco-descrizione">
@@ -13,5 +16,8 @@ export default function ElementoElencoSpese(props){
         <div className="elemento-elenco-prezzo">
             {ammontare}
         </div>
+        <button onClick={clickHandler}>
+            Cambia titolo
+        </button>
     </div>
 }
